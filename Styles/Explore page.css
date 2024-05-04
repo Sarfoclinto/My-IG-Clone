@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    background-color: black;
+    padding-left: 281px;
+    padding-top: 25px;
+
+}
+.sidebar{
+    padding: 20px 0;
+    /* padding-right: 3%; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 10px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: lightgray;
+    /* background: rgb(131,58,180);
+    background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 48%, rgba(252,176,69,1) 100%); */
+}
+a{
+    text-decoration: none;
+    color:  rgb(90, 87, 87);
+}
+.index{
+    display: flex;
+    flex-direction: row;
+    column-gap: 13px;
+    position: relative;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+.index:hover{
+    background-color: rgb(26, 26, 26);
+}
+.tooltip, .logo:hover{
+    color: rgb(90, 87, 87);
+    cursor: pointer;
+}
+.tooltip:hover, a:hover{
+    color: white;
+}
+.tooltip:active{
+    color: white;
+}
+.sidebar img{
+    height: 25px;
+    cursor: pointer;
+}
+#hmm{
+    height: 40px;
+}
+#profile{
+    border-radius: 15px;
+}
+.logo{
+    font-family: cursive;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.midpoint{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75%;
+    width: 100%;
+}
+.mini-tooltip{
+    display: flex;
+    position: absolute;
+    color: white;
+    background-color: red;
+    padding: 2px;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    top: 6px;
+    right: 132px;
+    font-size: 12px;
+}
+
+.sub-tooltip{
+    display: none;
+}
+/* explore================================== */
+/* table{
+    background-color: lightpink;
+    width: 100%;
+}
+tr{
+    background-color: lightblue;
+    width: 100%;
+    height: ;
+    display: flex;
+    flex-direction: row;
+}
+td{
+    background-color: maroon;
+    width: 100%;
+    height: 100%px;
+}
+td img, td video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+td[rowspan="2"]{
+    height: 640;
+    vertical-align: middle;
+} */
+td{
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+    /* background-color: lightblue; */
+}
+table img, table video{
+    width: 320px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+table video{
+    height: calc(2 * 100%);
+}
+
+.speak{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.404);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    opacity: 0;
+    pointer-events: none;
+}
+.innerdiv{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.innerdiv img{
+    height: 28px;
+    width: 28px;
+}
+.innerdiv p{
+    color: white;
+}
+
+td:hover .overlay{
+    opacity: 3;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+
+/* explore=================================== */
+
+/* mediaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+@media (max-width:580px){
+    body{
+        position: relative;
+        background-color: black;
+        padding-left: 100px;
+        color: white;
+    }
+    .tooltip, .logo{
+        display: none;
+    }
+    #hmm{
+        height: 38px;
+        width: 38px;
+        align-self: flex-start;    
+    }
+    .logo{
+        z-index: 100;
+    }
+    .icon{
+        height: fit-content;
+        margin-top: 40px;
+    }
+
+    /* body{
+        transition: ease all 0.5s;
+    } */
+    .index, .tooltip, .mini-tooltip{
+        transition: all 0.5s;  
+    }
+    .index:hover .tooltip, .index:hover .logo{
+        display: block;
+        position: absolute;
+        background-color: rgb(26, 26, 26);
+        left: 63px;
+        padding: 10px;
+        border-radius: 5px;
+        transition: all 0.5s;
+    }
+    .mini-tooltip{
+        display: block;
+    }
+
+    .index:hover .sub-tooltip{
+        display: block;
+        position: absolute;
+        background-color: rgb(26, 26, 26);
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        color: white;
+        top: 50px;
+        left: 0;
+        padding: 5px;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    .up img{
+        height: 30px;
+    }
+    .down img{
+        height: 25px;
+        width: 25px;
+    }
+    .up, .down{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 155px;
+        padding: 2px;
+    }
+    .up:hover, .down:hover{
+        background-color: black;
+    }
+    .mini-tooltip{
+        top: 6px;
+        left: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+/* mediaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */

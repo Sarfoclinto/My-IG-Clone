@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(159,48,117);
+    background: radial-gradient(circle, rgba(159,48,117,1) 0%, rgba(174,55,147,1) 100%);
+    padding: 5px;
+}
+section{
+    background-color: rgba(131, 58, 180, 0.226);
+    width: 45%;
+    box-shadow: 0.3em 0.3em 1em rgba(117, 25, 117, 0.6);
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100vh;
+    padding-top: 10px;
+}
+.empty-div{
+    height: 30%;
+}
+
+.mid-part{
+    position: relative;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    margin-top: -100px;;
+    margin-bottom: 60px;
+}
+.mid-part input{
+    width: 50%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(169, 65, 142);
+    padding-left: 10px;
+}
+.mid-part button{
+    width: 50%;
+    padding: 10px 0;
+    background-color: rgb(169, 65, 142);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(190, 83, 163);
+    color: rgb(185, 78, 163);
+    font-size: 17px;
+}
+.mid-part input::placeholder{
+    color: whitesmoke;
+}
+.mid-part p, a{
+    color: white;
+    font-family: sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+}
+a{
+    font-weight: bold;
+}
+.empty-div1{
+    border-style: solid;
+    border-top-width: 0.5px;
+    border-top-color: lightgray;
+    border-bottom: none;
+    width: 90%;
+}
+.or{
+    position: absolute;
+    left: 48%;
+    top:77%;
+    padding: 0 3px;
+    color: white;
+    background-color: rgb(157, 52, 149);
+    width: fit-content;
+    height: fit-content;
+}
+.facebook-icon{
+    height: 30px;
+}
+h1{
+    margin-bottom: 18px;
+    font-family: cursive;
+    color: white;
+    font-size: 30px;
+}
+.downpart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.btn{
+    cursor: pointer;
+    display: flex;
+    width: fit-content;
+    background-color: rgba(169, 65, 141, 0);
+    border: none;
+    align-items: center;
+}
+footer{
+    color: white;
+    border-style: none;
+    border-top-style: solid;
+    border-top-width: 0.1px;
+    border-color: rgb(184, 95, 154);
+    background-color: rgb(171, 58, 150);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

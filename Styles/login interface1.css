@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(131,58,180);
+    background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 48%, rgba(252,176,69,1) 100%);
+    padding: 5px;
+}
+section{
+    background-color: rgba(131, 58, 180, 0.226);
+    width: 45%;
+    box-shadow: 0.3em 0.3em 1em rgb(200 0 0 / 60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding-top: 10px;
+}
+section select{
+    background-color: rgba(131, 58, 180, 0);
+    border: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+select option{
+    background-color: rgba(131, 58, 180, 0.226);
+}
+.text h1{
+    font-family: cursive;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.text p{
+    color: white;
+}
+.facebook-icon{
+    height: 30px;
+}
+.button-n-text{
+    position: relative;
+}
+.button-n-text button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+/* .button-n-text hr{
+    width: 90%;
+    border-width: 1px;
+    border-color: lightgray;
+} */
+.empty-div{
+    border-style: solid;
+    border-top-width: 0.5px;
+    border-top-color: lightgray;
+    border-bottom: none;
+    width: 90%;
+}
+.button-n-text button a{
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(20, 91, 134);
+}
+.or{
+    position: absolute;
+    left: 48%;
+    top:49%;
+    padding: 0 3px;
+    color: white;
+    background-color: rgb(157, 52, 149);
+    width: fit-content;
+    height: fit-content;
+}
+.sign{
+    margin-top: 25px;
+    color: white;
+}
+.sign a, footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    color: white;
+    border-style: none;
+    border-top-style: solid;
+    border-top-width: 0.1px;
+    border-color: rgb(184, 95, 154);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

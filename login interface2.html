@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Log In Interface 2</title>
+    <link rel="stylesheet" href="Styles/login interface2.css">
+</head>
+<body>
+    <center>
+        <section>
+            <div class="empty-div"></div>
+
+            <div class="mid-part">
+                <h1>Instagram</h1>
+                <input type="text" placeholder="Username" class="js-name-input">
+                <input type="password" placeholder="Password" class="js-password-input">
+                <button onclick="goto();">Login</button>
+                <p>Forgot your login deatials? <a href="#">Get help signing in.</a> </p>
+            </div>
+
+            <div class="downpart">
+                <div class="empty-div1">
+                    <p class="or">OR</p>
+                </div>  
+
+                <button class="btn">
+                    <img src="Images/3d_circle_with_facebook_logo_isolated_on_a_transparent_background.png" alt="Facebook icon" class="facebook-icon">
+                    <a href="https://www.facebook.com/sign in/" target="_blank">Log in with Facebook</a>
+                </button>
+            </div>
+            
+            <footer>
+                Don't have an account? <a href="https://www.instagram.com/signup/" target="_blank">Sign Up.</a>
+            </footer>
+        </section>
+    </center>
+
+
+<script>
+    function goto(){
+        const nameElement=document.querySelector('.js-name-input')
+        const passwordElement=document.querySelector('.js-password-input')
+
+        const nameValue=nameElement.value;
+        const passwordValue=passwordElement.value;
+
+        const name='hec_sherlock';
+        const password='123456789';
+
+        if(nameValue===name && passwordValue===password){
+            window.location.replace("home page.html");
+        }else{
+            alert('Username || password incorrect')
+        }
+    }
+</script>
+</body>
+</html>
